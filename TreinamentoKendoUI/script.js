@@ -144,6 +144,7 @@ $(function () {
 
       const produtos = JSON.parse(localStorage.getItem("produtos")) || [];
 
+      //AQUI
       let novoId = 1;
       if (produtos.length > 0) {
         novoId = Math.max(...produtos.map(p => p.id)) + 1;
@@ -241,6 +242,7 @@ $(function () {
         $("#data").data("kendoDatePicker").value(dataSelecionada.DataCadastro);
         $("#ativo").data("kendoSwitch").value(dataSelecionada.Ativo);
 
+        //AQUI
   $("#botao-gravar").off("click").on("click", function () {
     const produtos = JSON.parse(localStorage.getItem("produtos")) || [];
 
